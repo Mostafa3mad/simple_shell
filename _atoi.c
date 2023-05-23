@@ -11,15 +11,15 @@ int interactive(info_t *info)
 }
 
 /**
- * is_sasa - checks if character is a sasaeter
+ * is_delim - checks if character is a delimeter
  * @c: the char to check
- * @sasa: the sasaeter string
+ * @delim: the delimeter string
  * Return: 1 if true, 0 if false
  */
-int is_sasa(char c, char *sasa)
+int is_delim(char c, char *delim)
 {
-	while (*sasa)
-		if (*sasa++ == c)
+	while (*delim)
+		if (*delim++ == c)
 			return (1);
 	return (0);
 }
